@@ -1,0 +1,28 @@
+{
+    "name": "miniprogram-amr-player",
+    "version": "0.0.19",
+    "description": "微信小程序amr音频播放器（微信语音所用的格式）",
+    "miniprogram": "dist",
+    "main": "dist/amrPlayer.js",
+    "types": "dist/amrPlayer.d.ts",
+    "scripts": {
+        "build": "cp ./src/* ./dist/ && uglifyjs ./lib/amr.js  -o ./dist/amr.min.js -c -m"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yaou-li/miniprogram-amr-player.git"
+    },
+    "keywords": [
+        "amr",
+        "miniprogram"
+    ],
+    "author": "yaouli",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yaou-li/miniprogram-amr-player/issues"
+    },
+    "homepage": "https://github.com/yaou-li/miniprogram-amr-player#readme",
+    "devDependencies": {
+        "uglify-js": "^3.17.4"
+    }
+}
